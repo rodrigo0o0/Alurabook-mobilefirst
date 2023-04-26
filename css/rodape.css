@@ -2,3 +2,65 @@
     font-weight: 400;
     padding: 1em;
 }
+.rodape__coluna{
+    display:none;
+}
+
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        margin: 50px 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+
+
+    }
+    .rodape__titulo{
+        font-size: 24px;
+    }
+    .rodape__coluna{
+        display:flex;
+        flex-direction: column;
+
+
+        
+
+    }
+    .rodape__titulo__subtitulo{
+        margin: 1em 0;
+        color: var(--cinza-claro);
+        font-size: 14px;
+        
+    }
+    .rodape__lista{
+        display: flex;
+        flex-direction: column;
+        
+    }          
+    .rodape__lista__item{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin-bottom: 1em;
+        
+
+    }
+
+    .rodape__lista a{
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--cinza-escuro);
+    }
+}
+@media screen and (min-width: 1728px){
+    .rodape__lista{
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+        
+    }      
+
+    
+}
+
